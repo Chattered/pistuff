@@ -4,9 +4,11 @@
 
 First, import the library:
 
-#+BEGIN_SRC python :exports none :results none :session readme
+#+BEGIN_SRC python :session readme
   from maze import *
 #+END_SRC
+
+#+RESULTS:
 
 Now you can generate a maze:
 
