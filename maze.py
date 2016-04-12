@@ -189,11 +189,10 @@ class Maze:
     >>> compactToBlock(GridLocation(5,8))
 
     For creating a maze in Minecraft, use the block representation.
-
-    Note: Both width and height are assumed to be positive integers. Assume bad
-    things if you provide any other values.
     """
     def __init__(self, width, height):
+    """Both width and height are assumed to be positive integers. Assume bad
+    things if you provide any other values."""
         self.width        = width
         self.height       = height
         self.blocksWidth  = self.width * 2 + 1
@@ -216,10 +215,9 @@ class Maze:
                     self.wayGrid[GridLocation(x,y)].append(w)
     def waysFrom(self,p):
         """The directions we can move in the maze from the GridLocation p in the compact
-        representation..
+        representation.
 
         Returns a list of compass directions, given by the characters 'N', 'E', 'S' and 'W'.
-
         """
         if p.x >= 0 and p.x < self.width and p.y >= 0 and p.y < self.height:
             ways = self.wayGrid[p][:]
