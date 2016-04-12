@@ -221,7 +221,6 @@ class Maze:
         Returns a list of compass directions, given by the characters 'N', 'E', 'S' and 'W'.
 
         """
-        ways = []
         if p.x >= 0 and p.x < self.width and p.y >= 0 and p.y < self.height:
             ways = self.wayGrid[p][:]
             if p.x > 0 and 'E' in self.wayGrid[GridLocation(p.x - 1, p.y)]:
