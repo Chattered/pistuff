@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Python Minecraft toys</title>
-<!-- 2016-04-12 Tue 22:55 -->
+<!-- 2016-04-12 Tue 22:58 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -155,7 +155,7 @@ First, import the library:
 
 <div class="org-src-container">
 
-<pre class="src src-python">from maze import *
+<pre class="src src-python"><span style="color: #00ffff; font-weight: bold;">from</span> maze <span style="color: #00ffff; font-weight: bold;">import</span> *
 </pre>
 </div>
 
@@ -165,7 +165,7 @@ Now you can generate a maze:
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze = Maze(5,6)
+<pre class="src src-python"><span style="color: #ffff00;">myMaze</span> = Maze(5,6)
 </pre>
 </div>
 
@@ -176,7 +176,7 @@ maze, you can use:
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.drawBlocks(block='%')
+<pre class="src src-python">myMaze.drawBlocks(block=<span style="color: #00ff00;">'%'</span>)
 </pre>
 </div>
 
@@ -249,7 +249,7 @@ We can verify that the block's around us are as depicted:
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,8)) # Northwest
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,8)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">Northwest</span>
 </pre>
 </div>
 
@@ -259,7 +259,7 @@ True
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(5,8)) # North
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(5,8)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">North</span>
 </pre>
 </div>
 
@@ -269,7 +269,7 @@ False
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,8)) # Northeast
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,8)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">Northeast</span>
 </pre>
 </div>
 
@@ -279,7 +279,7 @@ True
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,9)) # West
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,9)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">West</span>
 </pre>
 </div>
 
@@ -289,7 +289,7 @@ True
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,9)) # East
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,9)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">East</span>
 </pre>
 </div>
 
@@ -299,7 +299,7 @@ False
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,9)) # Southwest
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,9)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">Southwest</span>
 </pre>
 </div>
 
@@ -309,7 +309,7 @@ True
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(5,10)) # South
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(5,10)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">South</span>
 </pre>
 </div>
 
@@ -319,7 +319,7 @@ False
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,10)) # Southeast
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,10)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">Southeast</span>
 </pre>
 </div>
 
@@ -454,7 +454,7 @@ For creating a maze in Minecraft, use the block representation.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2016-04-12 Tue 22:55</p>
+<p class="date">Created: 2016-04-12 Tue 22:58</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
