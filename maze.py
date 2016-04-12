@@ -1,4 +1,3 @@
-import itertools
 import random
 from io import StringIO
 from collections import namedtuple
@@ -216,9 +215,11 @@ class Maze:
                     goalGrid.setGoal(GridLocation(x,y),GridLocation(x,y+1))
                     self.wayGrid[GridLocation(x,y)].append(w)
     def waysFrom(self,p):
-        """The directions we can move in the maze from the GridLocation p.
+        """The directions we can move in the maze from the GridLocation p in the compact
+        representation..
 
         Returns a list of compass directions, given by the characters 'N', 'E', 'S' and 'W'.
+
         """
         ways = []
         if p.x >= 0 and p.x < self.width and p.y >= 0 and p.y < self.height:
