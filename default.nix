@@ -5,7 +5,7 @@ let
     with pkgs.emacsPackages; pkgs.emacsWithPackages
       [ pkgs.emacsPackagesNg.elpy magit emacsw3m org ];
 in with pkgs; stdenv.mkDerivation {
-  name = "mtop";
+  name = "pistuff";
   buildInputs = [ myemacs python3 pythonPackages.pygments texLiveFull which ];
   shellHook = ''
     emacs-tcp maze .emacs
