@@ -47,11 +47,11 @@ increase our x-coordinate. As we move South (down), we increase our y-coordinate
 
 This maze has been drawn using a "block representation", where walls are "fat". So
 while we asked for a maze of width 5 and height 6, we actually drew it so that it is
-=myMaze.blocksWidth= (=11=) characters across and =myMaze.blocksHeight= (=13=)
-characters down. That way, we could represent the maze walls by the character =%=.
+=myMaze.blocksWidth= characters (=11=) across and =myMaze.blocksHeight= characters
+(=13=) down. That way, we could represent the maze walls by the character =%=.
 
 We can query whether or not there is a wall block at any location in this
-representation using hasBlockAt:
+representation using =hasBlockAt=:
 
 #+BEGIN_SRC python :session readme :exports all
   myMaze.hasBlockAt(GridLocation(5,9))
@@ -78,7 +78,7 @@ Let's mark this empty location on the map with an =X=:
 %%%%%%%%%%%
 #+end_example
 
-We can verify that the block's around us are as depicted:
+We can verify that the blocks around us are as depicted:
 
 #+BEGIN_SRC python :session readme :exports all
   myMaze.hasBlockAt(GridLocation(4,8)) # Northwest
@@ -137,7 +137,7 @@ We can verify that the block's around us are as depicted:
 : True
 
 Now there is also a "compact representation" where walls are "thin". Here, our
-location X on our map can be found using the function blockToCompact:
+location =X= on our map can be found using the function =blockToCompact=:
 
 #+BEGIN_SRC python :session readme :exports all
   blockToCompact(GridLocation(5,9))
@@ -146,7 +146,7 @@ location X on our map can be found using the function blockToCompact:
 #+RESULTS:
 : GridLocation(x=2, y=4)
 
-We can identify the walls at this location using waysFrom:
+We can identify the walls at this location using the method =waysFrom=:
 
 #+BEGIN_SRC python :session readme :exports all
   myMaze.waysFrom(GridLocation(2,4))
