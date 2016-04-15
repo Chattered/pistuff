@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>Python Minecraft toys</title>
-<!-- 2016-04-12 Tue 23:04 -->
+<!-- 2016-04-15 Fri 13:37 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <style type="text/css">
@@ -155,7 +155,7 @@ First, import the library:
 
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #a020f0;">from</span> maze <span style="color: #a020f0;">import</span> *
+<pre class="src src-python"><span style="color: #00ffff; font-weight: bold;">from</span> maze <span style="color: #00ffff; font-weight: bold;">import</span> *
 </pre>
 </div>
 
@@ -165,7 +165,7 @@ Now you can generate a maze:
 
 <div class="org-src-container">
 
-<pre class="src src-python"><span style="color: #a0522d;">myMaze</span> = Maze(5,6)
+<pre class="src src-python"><span style="color: #ffff00;">myMaze</span> = Maze(5,6)
 </pre>
 </div>
 
@@ -176,7 +176,7 @@ maze, you can use:
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.drawBlocks(block=<span style="color: #8b2252;">'%'</span>)
+<pre class="src src-python">myMaze.drawBlocks(block=<span style="color: #00ff00;">'%'</span>)
 </pre>
 </div>
 
@@ -204,13 +204,13 @@ increase our x-coordinate. As we move South (down), we increase our y-coordinate
 <p>
 This maze has been drawn using a "block representation", where walls are "fat". So
 while we asked for a maze of width 5 and height 6, we actually drew it so that it is
-<code>myMaze.blocksWidth</code> (<code>11</code>) characters across and <code>myMaze.blocksHeight</code> (<code>13</code>)
-characters down. That way, we could represent the maze walls by the character <code>%</code>.
+<code>myMaze.blocksWidth</code> characters (<code>11</code>) across and <code>myMaze.blocksHeight</code> characters
+(<code>13</code>) down. That way, we could represent the maze walls by the character <code>%</code>.
 </p>
 
 <p>
 We can query whether or not there is a wall block at any location in this
-representation using hasBlockAt:
+representation using <code>hasBlockAt</code>:
 </p>
 
 <div class="org-src-container">
@@ -244,12 +244,12 @@ Let's mark this empty location on the map with an <code>X</code>:
 </pre>
 
 <p>
-We can verify that the block's around us are as depicted:
+We can verify that the blocks around us are as depicted:
 </p>
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,8)) <span style="color: #b22222;"># </span><span style="color: #b22222;">Northwest</span>
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,8)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">Northwest</span>
 </pre>
 </div>
 
@@ -259,7 +259,7 @@ True
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(5,8)) <span style="color: #b22222;"># </span><span style="color: #b22222;">North</span>
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(5,8)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">North</span>
 </pre>
 </div>
 
@@ -269,7 +269,7 @@ False
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,8)) <span style="color: #b22222;"># </span><span style="color: #b22222;">Northeast</span>
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,8)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">Northeast</span>
 </pre>
 </div>
 
@@ -279,7 +279,7 @@ True
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,9)) <span style="color: #b22222;"># </span><span style="color: #b22222;">West</span>
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,9)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">West</span>
 </pre>
 </div>
 
@@ -289,7 +289,7 @@ True
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,9)) <span style="color: #b22222;"># </span><span style="color: #b22222;">East</span>
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,9)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">East</span>
 </pre>
 </div>
 
@@ -299,7 +299,7 @@ False
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,9)) <span style="color: #b22222;"># </span><span style="color: #b22222;">Southwest</span>
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(4,9)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">Southwest</span>
 </pre>
 </div>
 
@@ -309,7 +309,7 @@ True
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(5,10)) <span style="color: #b22222;"># </span><span style="color: #b22222;">South</span>
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(5,10)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">South</span>
 </pre>
 </div>
 
@@ -319,7 +319,7 @@ False
 
 <div class="org-src-container">
 
-<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,10)) <span style="color: #b22222;"># </span><span style="color: #b22222;">Southeast</span>
+<pre class="src src-python">myMaze.hasBlockAt(GridLocation(6,10)) <span style="color: #ffff00;"># </span><span style="color: #ffff00;">Southeast</span>
 </pre>
 </div>
 
@@ -329,7 +329,7 @@ True
 
 <p>
 Now there is also a "compact representation" where walls are "thin". Here, our
-location X on our map can be found using the function blockToCompact:
+location <code>X</code> on our map can be found using the function <code>blockToCompact</code>:
 </p>
 
 <div class="org-src-container">
@@ -343,7 +343,7 @@ GridLocation(x=2, y=4)
 </pre>
 
 <p>
-We can identify the walls at this location using waysFrom:
+We can identify the walls at this location using the method <code>waysFrom</code>:
 </p>
 
 <div class="org-src-container">
@@ -454,7 +454,7 @@ For creating a maze in Minecraft, use the block representation.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2016-04-12 Tue 23:04</p>
+<p class="date">Created: 2016-04-15 Fri 13:37</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
